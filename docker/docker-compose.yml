@@ -1,0 +1,28 @@
+version: "3"
+
+networks:
+  swiftgift-net:
+
+services:
+  sg-app:
+    image: node
+    volumes:
+      - ../.:/app
+    working_dir: /app
+    environment:
+      NODE_ENV: development
+    ports:
+      - 3000:3000
+    command: npm run dev
+    networks:
+      - swiftgift-net
+
+  sg-db:
+    env_file: ../.env
+    image: mysql:5.7
+    volumes:
+      - ../.mysql_data:/var/lib/mysql
+    ports:
+      - 33060:3306
+    networks:
+      - swiftgift-net

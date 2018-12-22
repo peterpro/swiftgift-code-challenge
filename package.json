@@ -1,0 +1,39 @@
+{
+  "name": "swiftgift-code-challenge",
+  "version": "1.0.0",
+  "description": "Just test piece of code",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.4.0",
+    "knex": "^0.16.3",
+    "mysql": "^2.16.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.11.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "nodemon": "^1.18.9"
+  },
+  "scripts": {
+    "dev": "nodemon ./index.js",
+    "start": "node ./index.js",
+    "dbinit": "node ./dbinit.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peterpro/swiftgift-code-challenge.git"
+  },
+  "keywords": [
+    "peterpro",
+    "swiftgift"
+  ],
+  "author": "Peter Prokunin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/peterpro/swiftgift-code-challenge/issues"
+  },
+  "homepage": "https://github.com/peterpro/swiftgift-code-challenge#readme"
+}
