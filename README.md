@@ -11,7 +11,7 @@ $ docker-compose run sg-app npm install
 $ docker-compose run sg-app npm run dbinit
 $ docker-compose up -d
 ```
-###Usage
+### Usage
 
 Getting insecure route:
 ```
